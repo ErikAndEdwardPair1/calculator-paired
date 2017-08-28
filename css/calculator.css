@@ -33,14 +33,13 @@
 .col-two-fourth{
     width: 50%;
 }
-.number-input {
+.white-button {
     width: 100%;
 }
-.operator-input{
-    width: 100%;
-}
-.operator-input{
+
+.orange-button{
     background-color: #fd9026;
+    width: 100%;
 }
 #operand-one{
     width: 100%;
