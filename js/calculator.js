@@ -116,3 +116,38 @@ document.getElementById("equals").addEventListener('click', equality, false);
 document.getElementById("plus-minus").addEventListener('click', inputPlusMinus, false);
 document.getElementById("percent").addEventListener('click', inputPercent, false);
 
+//Special methods
+var factorial= function(){
+    var numTemp=Number(document.getElementById('operand-one').value);
+    var result=1;
+    for(var i=1;i<=numTemp;i++){
+        result*=i;
+    }
+    document.getElementById('operand-one').value=result;
+}
+document.getElementById("factorial").addEventListener('click', factorial, false);
+
+var factors=function(){
+    var parentNumber=Number(document.getElementById('operand-one').value);
+    var firstFactors=[];
+    for(var i=0;i<parentNumber;i++){
+        if(parentNumber%(i+1)===0){
+            firstFactors.push(i+1);
+        }
+    }
+    alert('The factors of '+parentNumber+ ' are '+firstFactors);
+
+}
+document.getElementById("factors").addEventListener('click', factors, false);
+
+var sqrt=function(){
+    var sqrtNumber=Number(document.getElementById('operand-one').value);
+    document.getElementById('operand-one').value=Math.sqrt(sqrtNumber);
+//    use nested for loops to get to a custom made sqrt function if there is time tomorrow.
+
+}
+document.getElementById("sqrt").addEventListener('click', sqrt, false);
+
+var binary=function(){
+
+}
