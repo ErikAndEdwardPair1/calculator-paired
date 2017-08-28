@@ -1,0 +1,31 @@
+*{
+    box-sizing:border-box;
+}
+.container{
+    margin: 0 auto;
+    width:40%;
+    max-width:1000px;
+}
+.row{
+    width:100%;
+}
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.column{
+    border: 1px solid black;
+    float: left;
+    /*padding:10px;*/
+}
+.col-one-fifth{
+    width:20%;
+
+}
+.col-two-fifth{
+    width:40%;
+}
+.col-one-fourth{
+    width:25%;
+}
