@@ -3,7 +3,7 @@
 var listener = function (click) {
     alert("you pressed the button");
 }
-//Start of functions to handle button input into operand one
+//Start of functions to handle inputs into calculator
 var inputNumber= function () {
     if (document.getElementById('operator').value === ""){
         document.getElementById('operand-one').value+=this.value;
@@ -20,40 +20,21 @@ var inputDecimal = function () {
         var valuesToAddTwo=document.getElementById('decimal').value;
         document.getElementById('operand-two').value+=valuesToAddTwo;
     }
-}
+};
 var inputPlusMinus = function () {
     if (document.getElementById('operator').value ===""){
         document.getElementById('operand-one').value*=-1
     } else {
         document.getElementById('operand-two').value*=-1
     }
-}
+};
 var inputPercent = function () {
     if (document.getElementById('operator').value ===""){
         document.getElementById('operand-one').value*=.01
     } else {
         document.getElementById('operand-two').value*=.01;
     }
-}
-//End of functions to handle button input into operand one
-
-// Function for the operator forms
-// var operatorPlus = function () {
-//     var operatorToUse = document.getElementById('plus').value;
-//     document.getElementById('operator').value=operatorToUse;
-// }
-// var operatorMinus = function () {
-//     var operatorToUse = document.getElementById('minus').value;
-//     document.getElementById('operator').value=operatorToUse;
-// }
-// var operatorMultiply = function () {
-//     var operatorToUse = document.getElementById('multiply').value;
-//     document.getElementById('operator').value=operatorToUse;
-// }
-// var operatorDivide = function () {
-//     var operatorToUse = document.getElementById('divide').value;
-//     document.getElementById('operator').value=operatorToUse;
-// }
+};
 
 var inputOperator = function () {
     document.getElementById('operator').value = this.value;
@@ -149,5 +130,8 @@ var sqrt=function(){
 document.getElementById("sqrt").addEventListener('click', sqrt, false);
 
 var binary=function(){
-
-}
+    var biNumber=Number(document.getElementById('operand-one').value);
+    var biNumber2=biNumber.toString(2);
+    document.getElementById('operand-one').value=biNumber2;
+};
+document.getElementById("binary").addEventListener('click', binary, false);
