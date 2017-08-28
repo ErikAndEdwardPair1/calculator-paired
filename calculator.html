@@ -6,91 +6,111 @@
     <link rel="stylesheet" href="css/calculator.css">
 </head>
 <body>
-    <!--Container that will contain buttons. Floats and clears will be used to orient it.-->
-    <div class="container">
-        <!--Opperators and Opperand rows-->
-        <div class="row">
-            <!--Contains 3 columns 2/5 1/5 2/5-->
-            <div class="column col-two-fifth">
-                <input type="text" name="operand-one"  id="operand-one" value="" readonly>
-            </div>
-            <div class="column col-one-fifth">
-                <input type="text" name="operator"  id="operator" value="" readonly>
-            </div>
-            <div class="column col-two-fifth">
-                <input type="text" name="operand-two"  id="operand-two" value="" readonly>
-            </div>
+<!--Container that will contain buttons. Floats and clears will be used to orient it.-->
+<div class="container">
+    <!--Opperators and Opperand rows-->
+    <div class="row">
+        <!--Contains 3 columns 2/5 1/5 2/5-->
+        <div class="column col-two-fifth">
+            <input type="text" name="operand-one" id="operand-one" value="" readonly>
         </div>
-        <!--4 rows of 4 buttons-->
-        <div class="row">
-            <div class="column col-one-fourth">
-                <button class="number-input" id="one" value="1">
-                    1
-                </button>
-            </div>
-            <div class="column col-one-fourth">
-                <button class="number-input" id="two" value="2">
-                    2
-                </button>
-            </div>
-            <div class="column col-one-fourth">
-                a
-            </div>
-            <div class="column col-one-fourth">
-                <button class="operator-input" id="plus" value="+">
-                    +
-                </button>
-            </div>
+        <div class="column col-one-fifth">
+            <input type="text" name="operator" id="operator" value="" readonly>
         </div>
-        <div class="row">
-            <div class="column col-one-fourth">
-                a
-            </div>
-            <div class="column col-one-fourth">
-                a
-            </div>
-            <div class="column col-one-fourth">
-                a
-            </div>
-            <div class="column col-one-fourth">
-                <button class="operator-input" id="minus" value="-">
-                    -
-                </button>
-            </div>
+        <div class="column col-two-fifth">
+            <input type="text" name="operand-two" id="operand-two" value="" readonly>
         </div>
-        <div class="row">
-            <div class="column col-one-fourth">
-                a
-            </div>
-            <div class="column col-one-fourth">
-                a
-            </div>
-            <div class="column col-one-fourth">
-                a
-            </div>
-            <div class="column col-one-fourth">
-                a
-            </div>
-        </div>
-        <div class="row">
-            <div class="column col-one-fourth">
-                a
-            </div>
-            <div class="column col-one-fourth">
-                a
-            </div>
-            <div class="column col-one-fourth">
-                <button class="operator-input" id="equals">
-                    =
-                </button>
-            </div>
-            <div class="column col-one-fourth">
-                a
-            </div>
-        </div>
-
     </div>
-
+    <!--4 rows of 4 buttons-->
+    <div class="row">
+        <div class="column col-one-fourth">
+            <button class="number-input" id="one" value="1">
+                1
+            </button>
+        </div>
+        <div class="column col-one-fourth">
+            <button class="number-input" id="two" value="2">
+                2
+            </button>
+        </div>
+        <div class="column col-one-fourth">
+            <button class="number-input" id="three" value="3">
+                3
+            </button>
+        </div>
+        <div class="column col-one-fourth">
+            <button class="operator-input" id="plus" value="+">
+                +
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column col-one-fourth">
+            <button class="number-input" id="four" value="4">
+                4
+            </button>
+        </div>
+        <div class="column col-one-fourth">
+            <button class="number-input" id="five" value="5">
+                5
+            </button>
+        </div>
+        <div class="column col-one-fourth">
+            <button class="number-input" id="six" value="6">
+                6
+            </button>
+        </div>
+        <div class="column col-one-fourth">
+            <button class="operator-input" id="minus" value="-">
+                -
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column col-one-fourth">
+            <button class="number-input" id="seven" value="7">
+                7
+            </button>
+        </div>
+        <div class="column col-one-fourth">
+            <button class="number-input" id="eight" value="8">
+                8
+            </button>
+        </div>
+        <div class="column col-one-fourth">
+            <button class="number-input" id="nine" value="9">
+                9
+            </button>
+        </div>
+        <div class="column col-one-fourth">
+            <button class="operator-input" id="multiply" value="*">
+                *
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column col-one-fourth">
+            <button class="operator-input" id="clear">
+                C
+            </button>
+        </div>
+        <div class="column col-one-fourth">
+            <button class="number-input" id="zero" value="0">
+                0
+            </button>
+        </div>
+        <div class="column col-one-fourth">
+            <button class="operator-input" id="equals">
+                =
+            </button>
+        </div>
+        <div class="column col-one-fourth">
+            <button class="operator-input" id="divide" value="/">
+                /
+            </button>
+        </div>
+    </div>
+</div>
 <script src="js/calculator.js"></script>
 </body>
 </html>

@@ -17,30 +17,15 @@
 }
 .column{
     float: left;
+    border: 1px solid black;
     /*padding:10px;*/
 }
-.col-one-fifth{
-    width:20%;
-
-}
-.col-two-fifth{
-    width:40%;
-}
-.col-one-fourth{
-    width:25%;
-}
-.number-input {
+.col-whole{
     width: 100%;
 }
-.operator-input{
-    width: 100%;
+.col-one-seventh{
+    width: 14.28%;
 }
-#operand-one{
-    width: 100%;
-}
-#operand-two{
-    width: 100%;
-}
-#operator{
-    width: 100%;
+.col-two-seventh{
+    width: 28.57%;
 }

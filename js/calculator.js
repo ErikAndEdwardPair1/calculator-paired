@@ -177,4 +177,5 @@ document.getElementById("plus").addEventListener('click', operatorPlus, false);
 document.getElementById("minus").addEventListener('click', operatorMinus, false);
 document.getElementById("multiply").addEventListener('click', operatorMultiply, false);
 document.getElementById("divide").addEventListener('click', operatorDivide, false);
+document.getElementById("clear").addEventListener('click', clear, false);
 document.getElementById("equals").addEventListener('click', equality, false);
