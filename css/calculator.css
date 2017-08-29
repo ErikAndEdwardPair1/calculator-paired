@@ -1,6 +1,9 @@
 *{
     box-sizing:border-box;
 }
+body{
+    background-image: url("../img/desk.jpeg");
+}
 .container{
     margin: 0 auto;
     width:20%;
@@ -45,6 +48,7 @@
     width: 100%;
     font-size: 150%;
     border-radius: 10px;
+    color:white;
 }
 #operand-one{
     width: 100%;
@@ -61,4 +65,5 @@
 input[type=text]{
     font-size: 150%;
     text-align: right;
+    background-color: #f2f2f2;
 }

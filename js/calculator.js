@@ -110,6 +110,9 @@ document.getElementById("factorial").addEventListener('click', factorial, false)
 
 var factors=function(){
     var parentNumber=Number(document.getElementById('operand-one').value);
+    if(parentNumber<0){
+        parentNumber=parentNumber*-1;
+    }
     var firstFactors=[];
     for(var i=0;i<parentNumber;i++){
         if(parentNumber%(i+1)===0){
@@ -125,13 +128,13 @@ var sqrt=function(){
     var sqrtNumber=Number(document.getElementById('operand-one').value);
     document.getElementById('operand-one').value=Math.sqrt(sqrtNumber);
 //    use nested for loops to get to a custom made sqrt function if there is time tomorrow.
-
 }
 document.getElementById("sqrt").addEventListener('click', sqrt, false);
 
 var binary=function(){
-    var biNumber=Number(document.getElementById('operand-one').value);
-    var biNumber2=biNumber.toString(2);
-    document.getElementById('operand-one').value=biNumber2;
-};
+        var biNumber = Number(document.getElementById('operand-one').value);
+        var biNumber2 = biNumber.toString(2);
+        document.getElementById('operand-one').value = biNumber2;
+
+}
 document.getElementById("binary").addEventListener('click', binary, false);
