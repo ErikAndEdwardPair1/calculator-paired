@@ -35,7 +35,6 @@ var inputPercent = function () {
         document.getElementById('operand-two').value*=.01;
     }
 };
-
 var inputOperator = function () {
     document.getElementById('operator').value = this.value;
 };
